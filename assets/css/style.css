@@ -105,7 +105,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #298ce5;
+  background: #8b8b8b;
   color: #fff;
 }
 
@@ -220,7 +220,7 @@ h6 {
 }
 
 .appointment-btn:hover {
-  background: #166ab5;
+  background: #8b8b8b;
   color: #fff;
 }
 
@@ -474,7 +474,7 @@ h6 {
 #hero {
   width: 100%;
   height: 90vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/b1.jpg") top center;
   background-size: cover;
   margin-bottom: -200px;
 }
@@ -489,7 +489,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color: #3e5c14;
+  color: #689c1f;
 }
 
 #hero h2 {
@@ -699,7 +699,7 @@ section {
 }
 
 .why-us .content .more-btn:hover {
-  color: #74c400;
+  color: #8b8b8b;
   background: #fff;
 }
 
@@ -798,7 +798,7 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/about1.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -1005,7 +1005,7 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #74c400;
+  background: #8b8b8b;
   border-color: #74c400;
 }
 
@@ -1121,7 +1121,7 @@ section {
 }
 
 .appointment .php-email-form button[type=submit]:hover {
-  background: #a5f034;
+  background: #8b8b8b;
 }
 
 /*--------------------------------------------------------------
@@ -1265,7 +1265,7 @@ section {
   border-radius: 50px;
   width: 32px;
   height: 32px;
-  background: #a5e69c;
+  background: #ffffff;
 }
 
 .doctors .member .social a i {
@@ -1275,7 +1275,7 @@ section {
 }
 
 .doctors .member .social a:hover {
-  background: #74c400;
+  background: #8b8b8b;
 }
 
 .doctors .member .social a+a {
@@ -1531,7 +1531,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #74c400;
+  background: #b1b0b0;
   color: #fff;
 }
 
@@ -1611,7 +1611,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #a5f034;
+  background: #8b8b8b;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1772,7 +1772,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #74c400;
+  background: #ffffff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
