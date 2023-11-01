@@ -243,7 +243,7 @@ h6 {
 
 .navbar ul {
   margin: 0;
-  padding: 0;
+  padding: 15;
   display: flex;
   list-style: none;
   align-items: center;
@@ -394,8 +394,8 @@ h6 {
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 1px;
+  right: 15px;  
 }
 
 .navbar-mobile ul {
