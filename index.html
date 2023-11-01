@@ -922,6 +922,115 @@
       </div>
     </section><!-- End Services Section --> 
 
+
+    <style>
+    /* Styling for the card popup */
+      .card-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 30px 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+        border : 1px solid green;
+      }
+      
+      .card-popup-content {
+        background-color: #c9fdbd;
+        width: 95%;
+        min-width: 95vw;
+        max-height: 90vh;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        overflow: auto;
+        margin-inline: auto;
+      }
+      
+      #popup-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+      }
+      
+      #popup-name {
+        font-size: 24px;
+        color: #333;
+        margin: 0;
+      }
+      #popup-desig {
+        font-size: 18px;
+        color: #333;
+        margin: 0;
+      }
+      #popup-edu {
+        font-size: 16px;
+        color: #666;
+        margin: 10px 0;
+      }
+      
+      #popup-description {
+        font-size: 16px;
+        color: #666;
+        margin: 10px 0;
+      }
+      
+      .close-popup {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        cursor: pointer;
+        color: #007bff;
+      }
+      
+      /* Responsive design for smaller screens */
+      @media screen and (max-width: 768px) {
+        .card-popup-content {
+          width: 90%;
+          padding: 0;
+        }
+        
+        #popup-name {
+          font-size: 20px;
+        }
+        #popup-desig {
+          font-size: 20px;
+        }
+        #popup-edu {
+          font-size: 14px;
+        }
+        
+        #popup-description {
+          font-size: 14px;
+        }
+      }
+      
+      
+      
+    </style>
+
+        <!-- Add the popup container -->
+    <div id="card-popup" class="card-popup">
+      <div class="card-popup-content">
+        <img id="popup-image" src="" alt="Profile Image">
+        <h2 id="popup-name"></h2>
+        <p id="popup-desig"></p>
+        <p id="popup-edu"></p>
+        <p id="popup-description"></p>
+      </div>
+      <button id="close-popup" class="close-popup">Close</button>
+    </div>  
+
+    
+
     <!-- ======= Doctors Section ======= -->
     <section id="doctors" class="doctors section-bg">
       <div class="container">
@@ -934,7 +1043,7 @@
         <div class="row ">
 
           <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
+            <div class="member d-flex align-items-start" id="card-1">
               <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Dr. Raviraj Gujarati</h4>
@@ -954,7 +1063,7 @@
           </div>
 
           <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start">
+            <div class="member d-flex align-items-start" id="card-2">
               <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Nehal Gangdev
@@ -974,7 +1083,7 @@
           </div>
 
           <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
+            <div class="member d-flex align-items-start" id="card-3" >
               <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Gour Charabourty
@@ -995,7 +1104,7 @@
           </div>
 
           <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
+            <div class="member d-flex align-items-start" id="card-4">
               <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Dr. Kaushik Makwana
@@ -1015,7 +1124,7 @@
             </div>
           </div>
           <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
+            <div class="member d-flex align-items-start" id="card-5">
               <div class="pic"><img src="assets/img/doctors/doctors-5.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Ms. Zeel Shah
@@ -1029,16 +1138,16 @@
                   
                   </p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href=""><i style="color:lightskyblue" class="ri-twitter-fill"></i></a>
+                  <a href=""><i style="color:rgb(62, 62, 245)" class="ri-facebook-fill"></i></a>
+                  <a href=""><i style="color:purple" class="ri-instagram-fill"></i></a>
+                  <a href=""> <i style="color:blue" class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
+            <div class="member d-flex align-items-start" id="card-6">
               <div class="pic"><img src="assets/img/doctors/doctors-6.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Mr. Atul Sethiya
@@ -1051,16 +1160,16 @@
 
                   </p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href=""><i style="color:lightskyblue" class="ri-twitter-fill"></i></a>
+                  <a href=""><i style="color:rgb(62, 62, 245)" class="ri-facebook-fill"></i></a>
+                  <a href=""><i style="color:purple" class="ri-instagram-fill"></i></a>
+                  <a href=""> <i style="color:blue" class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
+            <div class="member d-flex align-items-start" id="card-7">
               <div class="pic"><img src="assets/img/doctors/doctors-8.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Ravi Siddhpura
@@ -1074,10 +1183,10 @@
                   
                   </p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href=""><i style="color:lightskyblue" class="ri-twitter-fill"></i></a>
+                  <a href=""><i style="color:rgb(62, 62, 245)" class="ri-facebook-fill"></i></a>
+                  <a href=""><i style="color:purple" class="ri-instagram-fill"></i></a>
+                  <a href=""> <i style="color:blue" class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -1087,6 +1196,147 @@
 
       </div>
     </section>
+
+
+    <script>
+      /// Function to open the card popup with the given details
+      function openCardPopup(imageSrc, name,desig, edu, description) {
+        const cardPopup = document.getElementById('card-popup');
+        const popupImage = document.getElementById('popup-image');
+        const popupName = document.getElementById('popup-name');
+        const popupEdu = document.getElementById('popup-edu');
+        const popupDesig = document.getElementById('popup-desig');
+        const popupDescription = document.getElementById('popup-description');
+        popupImage.src = imageSrc;
+        popupName.textContent = name;
+        popupDesig.textContent = desig;
+        popupEdu.textContent = edu;
+        popupDescription.innerHTML = description;
+        cardPopup.style.display = 'block';
+      }
+
+      // Function to close the card popup
+      function closeCardPopup() {
+        const cardPopup = document.getElementById('card-popup');
+        cardPopup.style.display = 'none';
+      }
+
+      // Add click event listeners to the cards
+      for (let i = 1; i <= 7; i++) {
+        const card = document.getElementById(`card-${i}`);
+        card.addEventListener('click', () => {
+          let imageSrc = ''; // Define the image source
+          let name = ''; // Define the name
+          let desig = '';
+          let edu = ''
+          let description = ''; // Define the description
+
+          // Define the details for each card based on its ID
+          switch (i) {
+            case 1:
+              imageSrc = 'assets/img/doctors/doctors-1.jpg';
+              name = 'Dr. Raviraj Gujarati';
+              desig = 'Director'
+              edu = ' M.Phil in Hospital and health System Management from BITS Pillani, External & Internal Assessor for NABH, Quality Council of India'
+              description = 'Dr. Raviraj Gujarati has more than 17 years of experience on a wide range of healthcare projects including feasibility studies, financial assessment, hospital strategy and management audits, hospital infrastructure assessment and audits, process audits and improvements, hospital commissioning & regulatory and licensing support, etc.<br>';
+              description += 'He has worked across India, including large healthcare players, hospitals, and other agencies.<br>';
+              description += 'He has worked in various corporate groups of hospitals across India and has rich experience in commissioning, operations, and project management.<br>';
+              description += 'He specializes in Project management practices for Greenfield, Brownfield, and turnkey projects.<br>';
+              description += 'He has experience in healthcare finance like M&A, P&L, managing EBITDA, CAPEX, OPEX, and Cash Flow.<br>';
+              description += 'In his tenure, he has commissioned more than 2000 hospital beds and ensured the smooth functioning of hospital infrastructure with the latest technologies. He has implemented Quality standards of healthcare by heading positions like Head Medical Services, GM-Operations and Quality, Chief Medical Administrator, and Project Head in different corporate Hospitals in India.<br>';
+              description += 'He has extensive experience in business process improvement and operation assessments covering system and process design and infrastructure assessment for private and public sector hospitals across India.<br>';
+              description += 'He has led the team on strategic evaluation based on licensing, changing regulatory frameworks, and public policies and their impact on medical devices and consumables products for various leading international medical device and consumables companies.<br>';
+              description += 'He was a key part of the team involved in assessing and developing healthcare policies and processes for infection control, hospital infrastructure development, accreditation, manpower credentialing, and training for hospitals.<br>';
+              description += 'He has been involved in over 25 market assessments and feasibility studies ranging from health clinics to medical colleges. He has also been engaged in several India market entry strategies for international healthcare players and non-healthcare corporates. He has been involved in several due diligence assessments for venture capital funds.';
+              break;
+              case 2:
+              imageSrc = 'assets/img/doctors/doctors-2.jpg';
+              name = 'Ms. Nehal Gangdev';
+              desig = 'Director'
+              edu = 'Post Graduate in Hospital & Healthcare Management, MBA in HR & Fianace'
+              description = 'Nehal is the Director of the healthcare sector for Telecom, UHC & UHPL in India, cutting across public health, private health, and digital health.<br>';
+              description += 'She has over 13+ years of experience spread across healthcare consultancy and hospital operations management in varied geographies such as India and the Middle East.<br>';
+              description += 'She has worked with governments, leading hospitals, medical device companies, health insurance providers, and international development agencies.<br>';
+              description += 'Core areas of expertise - Human Resource and finance, Public Health Advisory, Healthcare Project Advisory, Private Public Partnerships, Transaction Advisory, Commercial & Operations Due Diligence, Business Strategy, Operations Improvement, and Digital Health.<br>';
+              break;
+              case 3:
+              imageSrc = 'assets/img/doctors/doctors-3.jpg';
+              name = 'Mr. Gour Charabourty';
+              desig = 'Director-BD'
+              edu = 'Bachelor of Mechanical Engineering Post Graduate, Diploma in foreign trade management'
+              description = 'Gour Chakraborty, with vast experience of 27 years, associated with UHPL in 2022 as the Head of Business Unit Asia and as a member of the Executive Management.<br>';
+              description += 'He became a part of the UHPL (Ushma Healthcare Pvt Ltd) team, and he is currently running a company with Telecom India PNEUMATIC TUBES SYSTEMS LLP, specializing in Pneumatic tube systems in India, where he serves as the Managing Director.<br>';
+              description += 'His education took place in Kolkata, where he completed a Bachelor of Mechanical Engineering. He was born in Kolkata (West Bengal) in 1970. The High Performer!<br>';
+              description += 'He is known for his entrepreneurial spirit, always ready to take new courses and explore uncharted territories. He thrives on challenges, turning visions into reality, no matter the obstacles.<br>';
+              description += 'As he navigates this sea of possibilities, there comes a moment when he realizes that something vital is missing.<br>';
+              description += 'The waves of opportunity are still out there, waiting for him. But this time, armed with self-awareness and a deeper sense of purpose, he\'ll ride them with grace, wisdom, and authenticity.';
+              break;
+              case 4:
+              imageSrc = 'assets/img/doctors/doctors-4.jpg';
+              name = 'Dr. Kaushik Makwana';
+              desig = 'Head- Infra and Digital Health'
+              edu = 'M.Phil in Hospital and Health System Management from BITS Pillani, M.D. (Physician)'
+              description = 'More than 18 years of experience on the development of design concepts, space programs, and functional layouts for healthcare facilities, hospital strategy and management, process audits and improvements, hospital regulatory and licensing support, etc.<br>';
+              description += 'He has worked with large healthcare chains of hospitals and other agencies across India.<br>';
+              description += 'In his tenure, he has ensured the smooth functioning of the hospital with Quality standards of healthcare by heading positions like Head Medical services, Group Medical Director, Chief Medical Services, and Project Head in different corporate Hospitals in India.<br>';
+              description += 'He conducts site assessments, analyzes clinical workflows, and provides medical planning expertise to derive design decisions and develop design guidelines, standards, and policies for healthcare facilities based on evidence-based research and best practices.<br>';
+              description += 'He reviews and provides feedback on construction documents, equipment specifications, and medical equipment planning.<br>';
+              description += 'He provides clinical input to support business development efforts, including proposal development and client presentations.<br>';
+              description += 'He develops and implements telemedicine policies, procedures, and protocols in accordance with regulatory requirements and best practices. He also oversees the daily operation of the telemedicine program, including scheduling, staffing, and patient flow.<br>';
+              description += 'He develops and maintains relationships with external partners, including payers, providers, and technology vendors.';
+              break;
+              case 5:
+              imageSrc = 'assets/img/doctors/doctors-5.jpg';
+              name = 'Ms. Zeel Shah';
+              desig = 'Consultant  - Quality & Strategy'
+              edu = 'B.E. Biomedical, Master in Hospital Administration'
+              description = 'She is a strategist with strong analytical skills with 6 years of experience in market research, financial analysis, and business modeling, having excellent communication and presentation skills with the ability to communicate complex ideas effectively to diverse stakeholders.<br>';
+              description += 'She demonstrates the ability to develop and implement successful strategic plans in a complex healthcare environment.<br>';
+              description += 'Her key skills involve strong knowledge of project management methodologies, tools, and techniques.<br>';
+              description += 'Her key role includes providing guidance on regulatory compliance, risk management, and quality assurance.<br>';
+              description += 'She develops and implements performance metrics to track progress towards strategic objectives.<br>';
+              description += 'She leads and manages healthcare projects from initiation to closure, ensuring that project objectives are met on time, within budget, and to the required quality standards.<br>';
+              description += 'She develops and maintains project plans, schedules, budgets, and resource plans.<br>';
+              description += 'She identifies and manages project risks, issues, and dependencies.<br>';
+              description += 'She plans and designs hospital facilities, including defining the bed mix, facility mix, specialty mix, and developing strategies that facilitate various streams of revenue to plan a profitable project.<br>';
+              description += 'She develops and implements equipment planning strategies to ensure that the hospital has the necessary equipment to support patient care.<br>';
+              description += 'She conducts needs assessments to identify equipment requirements and recommends appropriate solutions.<br>';
+              description += 'She develops and implements the process-driven design for a hospital project and derives the actual hospital process in accordance to achieve lean systems leading to effective operations management.';
+              break;
+              case 6:
+              imageSrc = 'assets/img/doctors/doctors-6.jpg';
+              name = 'Mr. Atul Sethiya';
+              desig = 'Consultant- Operations  & Quality'
+              edu = 'Masters in Hospital Administration  in Hospital  from  SGRRITS, Dehradun'
+              description = 'He holds a master\'s degree in Hospital Administration and has 7 years of experience in hospital operations and quality management.<br>';
+              description += 'With a passion for excellence, he has consistently delivered innovative solutions and optimized processes to enhance patient care and operational efficiency.<br>';
+              description += 'He has extensive experience in the field of healthcare and has worked for a number of prestigious hospital organizations.';
+              break;
+              case 7:
+              imageSrc = 'assets/img/doctors/doctors-8.jpg';
+              name = 'Mr. Ravi Siddhpura';
+              desig = 'Project Head'
+              edu = 'B.E I.C  from DDIT-Nadiad,  PM Professionals  from PMI'
+              description = 'A seasoned healthcare management professional with rich work experience of 10 years of service delivery with large hospitals, hospitality industry.<br>';
+              description += 'He has handled responsibilities across Healthcare & institutional MEPF design, Service drawing & coordination, statutory and legal compliance in MEP, project management, operations, Technical & engineering services, Large, Medium, and small-scale energy-saving & compatible MEPF design.<br>';
+              description += 'He is also looking after quality management, Facility & management, Vendor management, handling onsite projects & client communication.<br>';
+              description += 'An excellent team player and a leader of Human Resources, having led the team of more than 200 employees.<br>';
+              description += 'Experience of working in complex scenarios and with multiple stakeholders, he brings a lot of experience and expertise to the team.';
+              break;
+          }
+
+          openCardPopup(imageSrc, name, desig, edu, description);
+        });
+      }
+
+      // Add a click event listener to close the popup
+      const closePopupButton = document.getElementById('close-popup');
+      closePopupButton.addEventListener('click', closeCardPopup);
+      // Hide the popup when the page is fully loaded
+      window.addEventListener('load', () => {
+        closeCardPopup();
+      });
+  </script>
     <!-- End Doctors Section -->
 
     <!-- <section id="project" class="your-section-class">
