@@ -670,9 +670,10 @@ section {
 --------------------------------------------------------------*/
 .why-us .content {
   padding: 30px;
-  background: #74c400;
+  background: #ffffff;
   border-radius: 4px;
-  color: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  color: #000000;
 }
 
 .why-us .content h3 {
